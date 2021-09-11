@@ -1,0 +1,77 @@
+.page-bg {
+  background-color: #72bce9;
+  @apply px-4 py-10 min-h-screen;
+  @apply bg-gray-100 text-gray-800;
+  @apply dark:bg-[#121212] dark:text-[#b0b0b0];
+}
+
+.article-wrapper {
+  @apply grid justify-center w-full;
+}
+
+article {
+  word-wrap: break-word;
+  @apply max-w-2xl overflow-y-scroll;
+}
+
+article h1 {
+  @apply font-bold text-5xl mb-6 flex space-x-4 items-center;
+  @apply text-gray-900;
+  @apply dark:text-[#b0b0b0];
+}
+
+article h2 {
+  @apply font-semibold text-3xl my-4;
+  @apply text-gray-900;
+  @apply dark:text-[#b0b0b0];
+}
+
+article h3 {
+  @apply font-semibold text-2xl my-3;
+  @apply text-gray-900;
+  @apply dark:text-[#b0b0b0];
+}
+
+article h3 > a {
+  @apply underline dark:text-[#b0b0b0];
+}
+
+article p {
+  @apply mb-2;
+}
+
+article code,
+article pre {
+  @apply my-4;
+}
+
+article blockquote {
+  @apply pl-6 italic my-4 relative;
+}
+
+article blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0.25rem;
+  @apply rounded-tr-md rounded-bl-md dark:bg-[#72bce9] bg-[#496bc7];
+}
+
+article blockquote > p {
+  @apply my-0 text-xl font-light;
+}
+
+article ul > li {
+  list-style-position: outside;
+  @apply list-inside list-item list-disc my-2;
+}
+
+article ol > li {
+  @apply list-decimal list-inside;
+}
+
+article a {
+  @apply text-[#496bc7];
+  @apply dark:text-[#72bce9];
+}
