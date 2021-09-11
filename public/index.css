@@ -11,7 +11,11 @@
 
 article {
   word-wrap: break-word;
-  @apply max-w-2xl overflow-y-scroll;
+  @apply max-w-2xl overflow-y-scroll text-lg;
+}
+
+article img {
+  @apply py-6;
 }
 
 article h1 {
