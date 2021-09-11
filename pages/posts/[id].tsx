@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Markdown, { compiler } from "markdown-to-jsx";
+import Markdown from "markdown-to-jsx";
 import React from "react";
 import { readdirSync, readFileSync } from "fs";
 import Head from "next/head";
